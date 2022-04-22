@@ -1,0 +1,121 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+     --main-color:  #1b1d40;
+     --secondary-color: #3cdeb3;
+     --off-color: #8f8f8f;
+     --filler-color: #ffffff;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+.smallerText{
+     font-size: 1.2rem;
+}
+ul, ol {
+     list-style: none;
+}
+
+h2 {
+     padding-left: .5em;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     background-color: var(--off-color);
+     width: 100%;
+     height: 3em;
+     font-size: 1.4em;
+     text-align: center;
+     color: white;
+     padding-top: 1em;
+
+}
+
+.myname{
+     color: var(--secondary-color);
+}
+
+.topSect{
+     display: flex;
+     width: 100%; 
+}
+
+.topSectInnerL{
+     width: 50%;
+     color: var(--filler-color);
+     background-color: var(--main-color);
+     font-size: 3em;
+     padding-left: .5em;
+     padding-right: .5em;
+}
+
+.topSectInnerR{
+     width: 50%;
+     color: var(--main-color);
+     background-color: var(--secondary-color);
+     padding-right: .5em;;
+}
+
+.myInfo {
+     font-size: 1.5em;
+}
+
+li{
+     padding-bottom: 20px;
+}
+
+.wideSectHeader{
+     background-color: var(--filler-color);
+     width: 100%;
+     height: 3em;
+     font-size: 1.4em;
+     text-align: center;
+     color: var(--main-color);
+     padding-top: 1em;
+}
+
+.projectSect{
+     display: flex;
+     flex-wrap: wrap;
+
+}
+
+.projectTile{
+     width: 50%;
+
+}
+
+
+footer {
+     display: flex;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
